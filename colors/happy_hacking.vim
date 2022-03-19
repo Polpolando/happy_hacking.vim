@@ -100,27 +100,27 @@ endfunction
 " Definitions for generic syntax elements such as strings and numbers.
 
 call s:Color("Pmenu", s:white, s:black2, s:t_white, s:t_black2)
-call s:Color("PmenuSel", s:white, s:gray2, s:t_white, s:t_gray2)
-call s:Color("Cursor", "NONE", s:gray2, "NONE", s:t_gray2)
-call s:Color("CursorLine", "NONE", s:gray2, "NONE", s:t_gray2)
-call s:Color("Normal", s:white, s:gray1, s:t_white, s:t_gray1)
+call s:Color("PmenuSel", s:white, s:gray2, s:t_white, s:t_black2)
+call s:Color("Cursor", "NONE", s:gray2, "NONE", s:t_black2)
+call s:Color("CursorLine", "NONE", s:gray2, "NONE", s:t_black2)
+call s:Color("Normal", s:white, s:gray1, s:t_white, s:t_black2)
 call s:Color("Search", s:yellow, "NONE", s:t_yellow, "NONE", "bold")
 call s:Color("Title", s:white, "NONE", s:t_white, "NONE", "bold")
 
 call s:Color("LineNr", s:gray4, "NONE", s:t_gray4, "NONE")
-call s:Color("StatusLine", s:white, s:gray6, s:t_white, s:t_gray6)
-call s:Color("StatusLineNC", s:gray4, s:gray6, s:t_gray4, s:t_gray6)
-call s:Color("StatusLineMarker", s:yellow, s:gray6, s:t_yellow, s:t_gray6, "bold")
+call s:Color("StatusLine", s:white, s:gray6, s:t_white, s:t_black2)
+call s:Color("StatusLineNC", s:gray4, s:gray6, s:t_gray4, s:t_black2)
+call s:Color("StatusLineMarker", s:yellow, s:gray6, s:t_yellow, s:t_black2, "bold")
 call s:Color("VertSplit", s:gray3, "NONE", s:t_gray3, "NONE")
-call s:Color("ColorColumn", "NONE", s:gray6, "NONE", s:t_gray6)
+call s:Color("ColorColumn", "NONE", s:gray6, "NONE", s:t_black2)
 
 call s:Color("Folded", s:gray4, "NONE", s:t_gray4, "NONE")
-call s:Color("FoldColumn", s:gray3, s:gray1, s:t_gray3, s:t_gray1)
+call s:Color("FoldColumn", s:gray3, s:gray1, s:t_gray3, s:t_black2)
 call s:Color("ErrorMsg", s:red, "NONE", s:t_red, "NONE", "bold")
 call s:Color("WarningMsg", s:yellow, "NONE", s:t_yellow, "NONE", "bold")
 call s:Color("Question", s:white, "NONE", s:t_white, "NONE")
 
-call s:Color("SpecialKey", s:white, s:gray2, s:t_white, s:t_gray2)
+call s:Color("SpecialKey", s:white, s:gray2, s:t_white, s:t_black2)
 call s:Color("Directory", s:blue, "NONE", s:t_blue, "NONE")
 
 call s:Color("Comment", s:gray4, "NONE", s:t_gray4, "NONE")
@@ -179,7 +179,7 @@ hi! link cssImportant  Notice
 hi! link CtrlPBufferHid Todo
 hi! link CtrlPBufferPath Todo
 
-call s:Color("CtrlPMode1", s:white, s:gray1, s:t_white, s:t_gray1, "bold")
+call s:Color("CtrlPMode1", s:white, s:gray1, s:t_white, s:t_black2, "bold")
 
 " D
 hi! link dDebug        Notice
@@ -350,7 +350,7 @@ hi! link WildMenu PmenuSel
 hi! link TabLine     StatusLine
 hi! link TabLineFill StatusLine
 
-call s:Color("TabLineSel", s:white, s:gray2, s:t_white, s:t_gray2, "bold")
+call s:Color("TabLineSel", s:white, s:gray2, s:t_white, s:t_black2, "bold")
 
 " Line numbers
 call s:Color("CursorLineNR", s:yellow, "NONE", s:t_yellow, "NONE", "bold")

@@ -59,7 +59,7 @@ let s:gray6    = "#393939"
 
 let s:t_white    = "230"
 let s:t_black1   = "16"
-let s:t_black2   = "16"
+let s:t_black2   = "none"
 let s:t_yellow   = "221"
 let s:t_blue     = "103"
 let s:t_green    = "107"
@@ -67,7 +67,7 @@ let s:t_turqoise = "157"
 let s:t_orange   = "179"
 let s:t_pink     = "211"
 let s:t_gold     = "186"
-let s:t_red      = "203"
+let s:t_red      = "1"
 let s:t_gray1    = "235"
 let s:t_gray2    = "59"
 let s:t_gray3    = "59"
@@ -106,6 +106,7 @@ call s:Color("CursorLine", "NONE", s:gray2, "NONE", s:t_black2)
 call s:Color("Normal", s:white, s:gray1, s:t_white, s:t_black2)
 call s:Color("Search", s:yellow, "NONE", s:t_yellow, "NONE", "bold")
 call s:Color("Title", s:white, "NONE", s:t_white, "NONE", "bold")
+call s:Color("EndOfBuffer", s:red, s:black2, s:t_red, s:t_black2)
 
 call s:Color("LineNr", s:gray4, "NONE", s:t_gray4, "NONE")
 call s:Color("StatusLine", s:white, s:gray6, s:t_white, s:t_black2)
@@ -121,7 +122,7 @@ call s:Color("WarningMsg", s:yellow, "NONE", s:t_yellow, "NONE", "bold")
 call s:Color("Question", s:white, "NONE", s:t_white, "NONE")
 
 call s:Color("SpecialKey", s:white, s:gray2, s:t_white, s:t_black2)
-call s:Color("Directory", s:blue, "NONE", s:t_blue, "NONE")
+call s:Color("Directory", s:red, "NONE", s:t_red, "NONE")
 
 call s:Color("Comment", s:gray4, "NONE", s:t_gray4, "NONE")
 call s:Color("Todo", s:gray5, "NONE", s:t_gray5, "NONE")

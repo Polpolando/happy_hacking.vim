@@ -57,7 +57,7 @@ let s:gray6    = "#393939"
 " This section defines all the colors that are used when Vim is run inside a
 " terminal instead of a GUI.
 
-let s:t_white    = "230"
+let s:t_white    = "15"
 let s:t_black1   = "16"
 let s:t_black2   = "none"
 let s:t_yellow   = "221"
@@ -69,11 +69,11 @@ let s:t_pink     = "211"
 let s:t_gold     = "186"
 let s:t_red      = "1"
 let s:t_gray1    = "235"
-let s:t_gray2    = "59"
-let s:t_gray3    = "59"
-let s:t_gray4    = "102"
-let s:t_gray5    = "145"
-let s:t_gray6    = "237"
+let s:t_gray2    = "242"
+let s:t_gray3    = "247"
+let s:t_gray4    = "250"
+let s:t_gray5    = "253"
+let s:t_gray6    = "256"
 
 " ============================================================================
 " Color Functions
@@ -99,18 +99,18 @@ endfunction
 "
 " Definitions for generic syntax elements such as strings and numbers.
 
-call s:Color("Pmenu", s:white, s:black2, s:t_white, s:t_black2)
-call s:Color("PmenuSel", s:white, s:gray2, s:t_white, s:t_black2)
-call s:Color("Cursor", "NONE", s:gray2, "NONE", s:t_black2)
-call s:Color("CursorLine", "NONE", s:gray2, "NONE", s:t_black2)
+call s:Color("Pmenu", s:white, s:black2, s:t_white, s:t_gray1)
+call s:Color("PmenuSel", s:white, s:gray2, s:t_red, s:t_black1)
+call s:Color("Cursor", "NONE", s:gray2, "NONE", s:t_gray2)
+call s:Color("CursorLine", "NONE", s:gray2, "NONE", s:t_gray2)
 call s:Color("Normal", s:white, s:gray1, s:t_white, s:t_black2)
-call s:Color("Search", s:yellow, "NONE", s:t_yellow, "NONE", "bold")
+call s:Color("Search", s:yellow, "NONE", s:t_pink, "NONE", "bold")
 call s:Color("Title", s:white, "NONE", s:t_white, "NONE", "bold")
 call s:Color("EndOfBuffer", s:red, s:black2, s:t_red, s:t_black2)
 
 call s:Color("LineNr", s:gray4, "NONE", s:t_gray4, "NONE")
-call s:Color("StatusLine", s:white, s:gray6, s:t_white, s:t_black2)
-call s:Color("StatusLineNC", s:gray4, s:gray6, s:t_gray4, s:t_black2)
+call s:Color("StatusLine", s:white, s:gray6, s:t_white, s:t_gray1)
+call s:Color("StatusLineNC", s:gray4, s:gray6, s:t_black1, s:t_gray1)
 call s:Color("StatusLineMarker", s:yellow, s:gray6, s:t_yellow, s:t_black2, "bold")
 call s:Color("VertSplit", s:gray3, "NONE", s:t_gray3, "NONE")
 call s:Color("ColorColumn", "NONE", s:gray6, "NONE", s:t_black2)
@@ -124,7 +124,7 @@ call s:Color("Question", s:white, "NONE", s:t_white, "NONE")
 call s:Color("SpecialKey", s:white, s:gray2, s:t_white, s:t_black2)
 call s:Color("Directory", s:red, "NONE", s:t_red, "NONE")
 
-call s:Color("Comment", s:gray4, "NONE", s:t_gray4, "NONE")
+call s:Color("Comment", s:gray4, "NONE", s:t_gray2, "NONE")
 call s:Color("Todo", s:gray5, "NONE", s:t_gray5, "NONE")
 call s:Color("String", s:green, "NONE", s:t_green, "NONE")
 call s:Color("Keyword", s:red, "NONE", s:t_red, "NONE")
@@ -133,6 +133,7 @@ call s:Color("Regexp", s:orange, "NONE", s:t_orange, "NONE")
 call s:Color("Macro", s:orange, "NONE", s:t_orange, "NONE")
 call s:Color("Function", s:yellow, "NONE", s:t_yellow, "NONE")
 call s:Color("Notice", s:yellow, "NONE", s:t_yellow, "NONE")
+call s:Color("htmlTag", s:red, "NONE", s:t_red, "NONE")
 
 call s:Color("MatchParen", "NONE", "NONE", "NONE", "NONE", "bold")
 call s:Color("Conceal", "NONE", "NONE", "NONE", "NONE", "NONE")
@@ -163,6 +164,11 @@ hi! NonText guifg=bg
 "
 " Language specific settings that would otherwise be too generic. These
 " definitions are sorted in alphabetical order.
+
+" C++
+hi! link cLabel             Macro
+hi! link cppSTLvariable     DiagnosticInfo
+hi! link cParen             Normal
 
 " Coffeescript
 hi! link coffeeRegex        Regexp

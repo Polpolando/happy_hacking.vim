@@ -4,17 +4,15 @@ Happy hacking is my persona color scheme for (Neo)Vim. It was originally
 based on another theme of mine called ["Autumn"][autumn] but has changed quite a
 bit over the years.
 
-## Screenshots
-
-| Rust | Ruby | Python
-|------|------|---------
-| ![Rust](screenshots/rust.png) | ![Ruby](screenshots/ruby.png) | ![Python](screenshots/python.png)
+Happy hacking is a ["fork"][fork] of a color scheme made by YorickPeterse that I've forked and edited
+for my own needs.
+The colors are drastically different but they work for me and i like them.
 
 ## Installation
 
 Using vim-plug, add this to `~/.config/nvim/init.vim`:
 
-    Plug 'git@gitlab.com:yorickpeterse/happy_hacking.vim.git'
+    Plug 'git@github.com:Polpolando/happy_hacking.vim.git'
 
 Then run `PlugInstall`, followed by `color happy_hacking`.
 
@@ -25,3 +23,4 @@ the MIT license unless specified otherwise. A copy of this license can be found
 in the file "LICENSE" in the root directory of this repository.
 
 [autumn]: https://github.com/yorickpeterse/autumn.vim
+[fork]: https://github.com/yorickpeterse/happy_hacking.vim

@@ -4,7 +4,11 @@ Happy hacking is my persona color scheme for (Neo)Vim. It was originally
 based on another theme of mine called ["Autumn"][autumn] but has changed quite a
 bit over the years.
 
+<<<<<<< HEAD
 Happy hacking is a [fork][fork] of a color scheme made by YorickPeterse that I've forked and edited
+=======
+Happy hacking is a ["fork"][fork] of a color scheme made by YorickPeterse that I've forked and edited
+>>>>>>> ac4f856d7317a390926ea2f8b4edee7a06cfebc9
 for my own needs.
 The colors are drastically different but they work for me and i like them.
 
